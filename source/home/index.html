@@ -7,10 +7,27 @@
     <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
     <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div id="myGrid" style="height: 400px;" class="ag-theme-alpine"></div>
-    <button id="btn">Show coppied content</button>
+    <div class="main">
+        <div class="row">
+            <button id="add">Nuevo Registro</button>
+            <button id="delete" class="disabled">Borrar seleccionados <span id="selectedRows">0</span></button>
+        </div>
+        <div class="row">
+            <div class="grid-container">
+                <div id="myGrid" class="ag-theme-alpine grid"></div>
+                <!--
+                    Temas:
+                        ag-theme-alpine
+                        ag-theme-balham
+                        ag-theme-material
+                -->
+            </div>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.js"></script>
     <script src="../data/index.js"></script>
     <script src="./index.js"></script>

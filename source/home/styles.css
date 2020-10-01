@@ -1,0 +1,61 @@
+body {
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    padding: 20px;
+}
+
+.row {
+    width: auto;
+    padding: 10px;
+    display: block;
+}
+
+.grid-container {
+    width: 100%;
+}
+
+.grid-container .grid {
+    height: 600px;
+    overflow-x: auto;
+}
+
+.row button {
+    margin-right: 20px;
+}
+
+button {
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color: #008ae6;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+button.disabled {
+    cursor: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+    pointer-events: none;
+    border: 1px solid gray;
+}
+
+button span {
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    background-color: #1aa3ff;
+}
+
+button:active {
+    background-color: #008ae6;
+    transform: translateY(0);
+}

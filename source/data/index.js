@@ -1,4 +1,4 @@
-const data = [
+let data = [
 	{
 		Int_Id: 388,
 		Int_VariableId: 11,
